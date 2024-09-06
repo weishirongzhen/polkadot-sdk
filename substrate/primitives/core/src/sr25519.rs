@@ -284,6 +284,9 @@ impl Pair {
 			Err(_) => false,
 		}
 	}
+	pub fn seed(&self) -> SecretKey {
+		self.0.secret.clone()
+	}
 }
 
 impl CryptoType for Public {

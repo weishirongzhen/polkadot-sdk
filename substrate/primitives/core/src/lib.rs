@@ -79,6 +79,7 @@ pub mod ecdsa;
 pub mod ed25519;
 pub mod paired_crypto;
 pub mod sr25519;
+mod test;
 
 #[cfg(feature = "bls-experimental")]
 pub use bls::{bls377, bls381};
